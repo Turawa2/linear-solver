@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solve Linear Equations</title>
+    <link rel="stylesheet" href="solver.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="app-name">Linear Solver</h1>
+        <p class="description">Enter your linear equation below, and we'll solve it step by step!</p>
+        
+        <form id="equation-form">
+            <input type="text" id="equation-input" class="input" placeholder="e.g., 2x + 5 = 15" required>
+            <button type="submit" class="btn">Solve</button>
+        </form>
+        
+        <div id="solution-container" class="solution-container" hidden>
+            <h2>Solution:</h2>
+            <p id="solution-steps"></p>
+        </div>
+    </div>
+
+    <script src="solver.js"></script>
+</body>
+</html>
